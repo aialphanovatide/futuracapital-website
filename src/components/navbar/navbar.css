@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.navbar{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+}
+
+.navbar_container{
+    max-width: 1440px;
+    width:100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    z-index: 2;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.nav_logo{
+    margin: 15px;
+    width: 15%;
+    min-width: 155px;
+    height: auto;
+}
+
+.nav_items{
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    width: 70vh;
+    gap: 20px;
+    min-width: 500px;
+}
+.nav_item{
+    cursor: pointer;
+    color: white;
+    transition: .3s ease;
+}
+.nav_item:hover{
+    transition: .3s ease;
+    color: #7B45D3;
+
+}
+
+.nav_toggle{
+    display: none;
+}
+
+button{
+    background: none;
+    border: 0;
+}
+button:active{
+    background-color: rgb(41, 41, 41);
+}
+
+.nav_item_active{
+    color: #7B45D3;
+    cursor: pointer;
+}
+
+
+@media (max-width: 880px){
+    .nav_items{
+        position: fixed;
+        top: -105vh;
+        left: 0;
+        padding-top: 110px;
+        font-size: 18px;
+        z-index: -1;
+        height: 100%;
+        min-width: 300px;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        gap: 30px;
+        background-image: url("../../img/menu_background.jpg");
+        background-size: cover;
+        transition: .7s;
+        transform: translateY(110vh);
+    }
+
+
+    .nav_toggle{
+        display: inline-block;
+        margin-right: 30px;
+    }
+
+    .responsive_nav{
+        transform: none;
+    }
+
+    .nav_logo{
+        margin: 15px;
+        width: 10%;
+        min-width: 70px;
+        height: auto;
+    }
+}
