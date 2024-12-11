@@ -28,6 +28,15 @@
     max-width: 600px;
     margin: 50px 0px 50px 0px;
 }
+
+.font-resources{
+    font-family: Nunito;
+    font-weight: 400;
+    font-size: 18px;
+    max-width: 150px;
+    text-align: center;
+}
+
 .mobile{
     display: none;
 }

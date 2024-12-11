@@ -8,11 +8,16 @@
     z-index: 0;
     position: relative;
     padding-top: 30px;
-    background-image: url("../../img/background.jpg");
-    background-size: cover;
+
+    
     width: 100%;
     height: 100%;
     min-height: 90vh;
+}
+
+body{
+    background-image: url("../../img/background.jpg");
+    background-size: cover;
 }
 
 .splide__pagination{
@@ -48,16 +53,6 @@
   }
 
 
-
-.pagination_background{
-    width: 200px;
-    height: 50px;
-    background-color: #7B45D3;
-    position: fixed;
-    top: 850px;
-    right: 200px;
-    z-index: 0;
-}
 
 .splide__arrows{
     display: flex;
@@ -104,13 +99,13 @@
     height: 100px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     background-color: black;
     width: 100%;
 }
 
 .navbar_container{
-    max-width: 1440px;
+    /* max-width: 1440px; */
     width:100%;
     margin-left: 5px;
     margin-right: 5px;
@@ -119,6 +114,9 @@
     justify-content: space-between;
     align-items: center;
     color: white;
+    height: 100px;
+    background-color: black;
+    position: fixed;
 }
 
 .nav_logo{
@@ -134,9 +132,12 @@
     font-weight: 500;
     display: flex;
     justify-content: space-between;
-    width: 74vh;
+    width: 77vw;
+    max-width: 800px;
     gap: 20px;
     min-width: 500px;
+    padding-right: 19px;
+    text-wrap: nowrap;
 }
 .nav_item{
     cursor: pointer;
@@ -184,10 +185,12 @@ button:active{
         top: -105vh;
         left: 0;
         padding-top: 110px;
+        padding-right: 0px;
         font-size: 18px;
         z-index: -1;
         height: 100%;
         min-width: 300px;
+        max-width: none;
         width: 100%;
         flex-direction: column;
         align-items: center;

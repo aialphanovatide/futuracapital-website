@@ -78,25 +78,25 @@ function HomePage() {
         onMove={(splide, newIndex) => setCurrentIndex(newIndex)}
         >
         <SplideSlide className="splide-slide is-active">
-          <PageOne />
+          <PageOne isActive={currentIndex === 0} />
         </SplideSlide>
         <SplideSlide className="splide-slide">
-          <PageTwo />
+          <PageTwo isActive={currentIndex === 1} />
         </SplideSlide>
         <SplideSlide className="splide-slide">
-          <PageThree />
+          <PageThree isActive={currentIndex === 2} />
         </SplideSlide >
         <SplideSlide className="splide-slide">
-          <PageFour />
+          <PageFour isActive={currentIndex === 3} />
         </SplideSlide >
         <SplideSlide className="splide-slide">
-          <PageFive />
+          <PageFive isActive={currentIndex === 4} />
         </SplideSlide>
         <SplideSlide className="splide-slide">
-          <PageSix />
+          <PageSix isActive={currentIndex === 5} />
         </SplideSlide>
         <SplideSlide className="splide-slide">
-          <PageSeven />
+          <PageSeven isActive={currentIndex === 6} />
         </SplideSlide>
 
       </Splide>
@@ -107,3 +107,5 @@ function HomePage() {
 }
 
 export default HomePage
+
+
