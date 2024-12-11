@@ -1,6 +1,5 @@
 import React from 'react'
 import './circlesAnim.css'
-import { useState } from 'react'
 import res1 from '../../img/circles-anim-1.svg'
 import res2 from '../../img/circles-anim-2.svg'
 import res3 from '../../img/circles-anim-3.svg'

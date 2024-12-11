@@ -1,8 +1,8 @@
 import React from 'react'
 import './pageFive.css'
 import Core from '../core'
-import res_1 from '../../img/resource1_page_5.svg'
-import res_2 from '../../img/resource2_page_5.svg'
+import res_1 from '../../img/resource1_page_5.gif'
+import res_2 from '../../img/resource2_page_5.gif'
 function PageFive() {
   return (
     <div className='page_container'>

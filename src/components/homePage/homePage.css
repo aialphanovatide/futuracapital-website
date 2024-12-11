@@ -176,6 +176,8 @@ button:active{
 .nav_item_active{
     color: #7B45D3;
     cursor: pointer;
+    border-bottom-style: solid;
+    border-color: #7B45D3;
 }
 
 

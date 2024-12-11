@@ -12,7 +12,6 @@ import PageSeven from '../pageSeven';
 import logo from "../../img/logo_desktop.svg"
 import logo_mobile from "../../img/Futura Capital Logo White.svg"
 import MenuIcon from '@mui/icons-material/Menu';
-import { Pagination } from '@mui/material';
 
 function HomePage() {
   const [slideIndex, setSlideIndex]= useState(0)
@@ -26,7 +25,8 @@ function HomePage() {
   }, [(slideIndex)]);
 
   useEffect(() => {
-    setSlideIndex(currentIndex)
+    setSlideIndex(currentIndex);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [(currentIndex)]);
     
   const showNavbar = () => {
