@@ -124,6 +124,7 @@ body{
     width: 15%;
     min-width: 155px;
     height: auto;
+    cursor: pointer;
 }
 
 .nav_items{

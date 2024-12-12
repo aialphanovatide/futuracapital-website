@@ -51,8 +51,8 @@ function HomePage() {
       <span className='pagination_background'></span>
       <div className='navbar'>
             <div className='navbar_container'>
-                <img src={logo} alt="" className='nav_logo desktop' />
-                <img src={logo_mobile} alt="" className='nav_logo mobile' />
+                <img src={logo} alt="" className='nav_logo desktop' onClick={() => changeSlideIndex(0)} />
+                <img src={logo_mobile} alt="" className='nav_logo mobile' onClick={() => changeSlideIndex(0)}/>
                 <div ref={navRef} className="nav_items responsive_nav">
                     <span onClick={() => changeSlideIndex(0)} className={getNavItemClass(0)}>Home</span>
                     <span onClick={() => changeSlideIndex(1)} className={getNavItemClass(1)}>About Us</span>
