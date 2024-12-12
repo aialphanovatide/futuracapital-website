@@ -1,11 +1,11 @@
 .go-container{
     width: 100%;
     height: 100%;
-    margin-top: 100px;
+
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin-top: -10px;
 }
 
 .go-animation{
@@ -111,9 +111,9 @@
     }
 }
 
-
 @media screen and (max-width: 880px){
     .go-container{
-        margin-top: 100px;
+        margin-top: 50px;
+
     }
 }
