@@ -10,7 +10,15 @@ const Core = ({ extraStyle = '', image, alt, tittle, description }) => {
         <div className={coreClass}>
             <img src={image} alt={alt} className={imgClass} />
             <p className='tittle-core'>{tittle}</p>
-            <p className='description-core'>{description}</p>
+            {
+                tittle === 'Email' ? (
+                    <a href={`mailto:${description}`} className='description-core'>
+                        {description}
+                    </a>
+                ) : (
+                    <p className='description-core'>{description}</p>
+                )
+            }
         </div>
     );
 }

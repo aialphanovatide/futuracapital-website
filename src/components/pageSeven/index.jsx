@@ -10,7 +10,7 @@ function PageSeven() {
         <p className='subtittle-page'>Take the Next Step toward a Secure and Strategic Trading Partnership</p>
         <p className='paragraph-page'>Ready to achieve stability and growth with Swiss confidence? Partner with Futura Capital AG for secure, strategic trading solutions rooted in Swiss finance principles.</p>
         <div className='contact-container'>
-          <Core image={res_1} tittle="Email" description="aman@futuracapital.co"/>
+          <Core image={res_1} tittle="Email" description="enquiries@futuracapital.co"/>
         </div>
     </div>
   )
