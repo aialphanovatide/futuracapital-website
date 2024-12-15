@@ -33,6 +33,9 @@ function HomePage() {
       navRef.current.classList.toggle("responsive_nav")
   }
 
+  const unshowNavbar = () => {
+      navRef.current.classList.add("responsive_nav")
+  }
   const getNavItemClass = (index) => {
 
       return slideIndex === index ? 'nav_item_active' : 'nav_item';
@@ -40,11 +43,8 @@ function HomePage() {
 
   const changeSlideIndex = (index) => {
     setSlideIndex(index)
-    showNavbar()
+    unshowNavbar()
   }
-
-  
-
 
   return (
     <div>
@@ -107,5 +107,3 @@ function HomePage() {
 }
 
 export default HomePage
-
-
